@@ -5,6 +5,8 @@ The official repository for our default theme, Expanse. Fork this to use it as a
 
 ## Getting Started
 
+Test updating
+
 This theme uses LESS for CSS precompiling, and it uses Gulp for compiling the LESS into CSS, and also for concatenating and minifying JavaScript files.
 
 _Note: You do not need LESS and Gulp to use this theme, you can just edit the CSS directly if you like. LESS and Gulp are for advanced users._
