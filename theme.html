@@ -2,7 +2,7 @@
 <html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
-    <title>Simon is still here
+    <title>
       {% if is_login %}Login
       {% elif is_home %}{{ site.author }}
       {% elif is_tag %}{{ tag }}
@@ -124,7 +124,7 @@
         <div class="posts">
           {% for post in posts %}
           <div class="item">
-              <h3><a href="{{ post.permalink }}">{{ post.title }} here is the title</a></h3>
+              <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
               </div>
@@ -182,7 +182,7 @@
               {% if post.author %}
               <span class="post-author-name">{{ post.author.name }}</span>
               {% endif %}
-              <span class="post-date">Posted on mees{{ post.created_at|format_date }}</span>
+              <span class="post-date">Posted on {{ post.created_at|format_date }}</span>
             </p>
           </a>
           <ul class="post-options">
@@ -220,7 +220,7 @@
           {{ page.content }}
         </div>
         <div class="pagination">
-          <a href="javascript:history.go(-1)" class="prev">&laquo; Back To Listssss</a>
+          <a href="javascript:history.go(-1)" class="prev">&laquo; Back To List</a>
         </div>
 
       {% endif %}
